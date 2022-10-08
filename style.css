@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+
+
+body 
+{ font-family: 'Chewy', cursive;
+}
+.title ,h1 {
+    color: black;
+    text-align: center;
+    font-size: 42px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#seleccionar-personaje 
+{   height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo {
+    color: black;
+    font-size: 22px;
+
+}
+
+.tarjeta-personaje 
+{   width: 160px;
+    height: 100px;
+    background-color: #607EAA;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-color: transparent;
+}
+
+.tarjeta-personaje img {
+    width: 80px;
+}
+
+
+input {
+    display: none;
+}
+
+input:checked + label{
+    background-color: #8FE3CF;
+}
+
+
+
+.tarjetas, .boton-ataque{
+    display: flex;
+    gap: 5px;
+    
+}
+.boton-personaje
+{   width: 100px;
+    height: 100;
+    background-color: #8FE3CF;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 15px;
+    border: 1px solid;
+    border-radius: 15px;
+    font-family: 'Chewy', cursive;
+    border-color: transparent;
+    
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.boton-ataque{
+    width: 100px;
+    height: 100;
+    background-color: #8FE3CF;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 15px;
+    border: 1px solid;
+    border-radius: 15px;
+    font-family: 'Chewy', cursive;
+    border-color: transparent;
+    color: black;
+}
+
+#mensajes {
+    width: 200px;
+    background: #8FE3CF;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+#boton-reiniciar {
+    border: none;
+    font-family: 'Chewy', cursive;
+    
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque:active
+{
+    background-color: #607EAA    
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+@media(max-width: 360px){
+    .tarjetas{
+        flex-direction: column;
+    }
+    .boton-ataque {
+        flex-direction: column;
+    }
+}

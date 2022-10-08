@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" >
+    <title>Rock, Paper, Scissors, Lizzard, Spock</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>   
+    <section id="seleccionar-personaje">
+        <h1 class="title">Rock, Paper, Scissors, Lizzard, Spock</h1>
+
+        <h2 class="subtitulo">Elige tu personaje:</h2>
+
+    <div class="tarjetas">
+        
+        <input type="radio" name="personaje" id="sheldon"/>
+        <label class="tarjeta-personaje" for="sheldon">
+            <p>Sheldon</p>
+        </label>
+        
+        <input type="radio" name="personaje" id="leonard"/>
+        <label class="tarjeta-personaje" for="leonard">Leonard</label>
+        
+        <input type="radio" name="personaje" id="howard"/>
+        <label class="tarjeta-personaje" for="howard">Howard</label>
+        
+        <input type="radio" name="personaje" id="raj"/>
+        <label class="tarjeta-personaje" for="raj">Raj</label>
+        
+
+    </div>
+
+        <button class="boton-personaje" id="boton-personaje">Seleccionar</button>
+        
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h1 class="title">Rock, Paper, Scissors, Lizzard, Spock</h1>
+
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+
+        <div>
+            <button class="boton-ataque" id="boton-rock">Rock 🪨 </button>
+            <button class="boton-ataque" id="boton-paper">Paper 📋</button>
+            <button class="boton-ataque" id="boton-scissors">Scissors ✂️</button>
+            <button class="boton-ataque" id="boton-lizzard">Lizzard 🦎</button>
+            <button class="boton-ataque" id="boton-spock">Spock 🖖</button>
+        </div>
+
+        <div id="mensajes">
+                <p id="resultado">GOOD LUCK! ☘️</p>
+                           
+            <section id="reiniciar">       
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>        
+        </div>
+        
+        <div class="ataques">
+            <div class="ataques-jugador">
+                <p id="vidas-jugador">3</p>
+                <p id="mascota-jugador"></p>
+                <div id="ataque-del-Jugador"></div>
+            </div>
+            <div class="ataques-enemigo">
+                <p id="vidas-enemigo">3</p>
+                <p id="personaje-enemigo"></p>
+                <div id="ataque-del-Enemigo"></div>
+            </div>
+        </div>    
+</section>
+<footer>
+    <div class="container">
+<a href="https://twitter.com/klaudiohuntt" target="_blank">
+    <img src="icons8-twitter-30.png">
+</a>
+<a></a>
+<a></a>
+<p>© @klaudiohuntt</p>
+    </div>
+</footer>
+<script src="./js/mokepon.js"></script>
+</body>
+</html>
