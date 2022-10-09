@@ -143,6 +143,10 @@ footer{
     justify-content: center;
 }
 
+p.vidas-txt{
+    padding: 10px;
+    text-align: center;
+}
 @media(max-width: 360px){
     .tarjetas{
         flex-direction: column;
